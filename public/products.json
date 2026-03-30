@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Create simple and professional resumes quickly with beginner-friendly tools.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic editing",
+      "Export to PDF"
+    ],
+    "icon": "https://i.ibb.co.com/TM27FgRt/images.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Kit",
+    "description": "Advanced resume builder with ATS-friendly templates and customization.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Multiple export formats"
+    ],
+    "icon": "https://i.ibb.co.com/QFyWgKDj/portfolio.png"
+  },
+  {
+    "id": 3,
+    "name": "AI Resume Assistant",
+    "description": "Generate powerful resumes using AI-driven suggestions and improvements.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "AI content generator",
+      "Grammar correction",
+      "Keyword suggestions"
+    ],
+    "icon": "https://i.ibb.co.com/Nn3RNRHd/4712143.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Build stunning portfolios with modern layouts and responsive design.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Drag & drop builder",
+      "Custom domain",
+      "Responsive templates"
+    ],
+    "icon": "https://i.ibb.co.com/C3WRJrTf/images-1.png"
+  },
+  {
+    "id": 5,
+    "name": "Career Booster Pack",
+    "description": "Complete toolkit including resume, cover letter, and portfolio builder.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Resume + Cover letter",
+      "Portfolio templates",
+      "Priority support"
+    ],
+    "icon": "https://i.ibb.co.com/MxzGs7Z0/619175.png"
+  },
+  {
+    "id": 6,
+    "name": "Interview Prep Guide",
+    "description": "Prepare for interviews with curated questions and expert answers.",
+    "price": 9,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Common questions",
+      "Answer examples",
+      "Mock interview tips"
+    ],
+    "icon": "https://i.ibb.co.com/Ld210vwF/images-2.png"
+  },
+  {
+    "id": 7,
+    "name": "Job Tracker",
+    "description": "Track your job applications and manage your hiring pipeline.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Application tracking",
+      "Status updates",
+      "Reminders"
+    ],
+    "icon": "https://i.ibb.co.com/KSbhDt1/16784418.png"
+  },
+  {
+    "id": 8,
+    "name": "Premium Career Suite",
+    "description": "All-in-one premium access to every career tool and template.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited access",
+      "All templates",
+      "Advanced analytics"
+    ],
+    "icon": "https://i.ibb.co.com/DPNSMrDb/2385865.png"
+  },
+  {
+    "id": 9,
+    "name": "Freelancer Toolkit",
+    "description": "Tools designed for freelancers to manage clients and showcase work.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Client management",
+      "Invoice templates",
+      "Portfolio builder"
+    ],
+    "icon": "https://i.ibb.co.com/kCNnMYk/briefcase-3d-icon-free-png.webp"
+  }
+]

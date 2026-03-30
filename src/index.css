@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.linear-bg{
+    background: linear-gradient(to right, #5f2ee6, #a55be6 );
+}
+
+body{
+    box-sizing: border-box;
+}
+/* *{
+    outline: red 2px solid;
+} */
