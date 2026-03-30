@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
+import { toast} from 'react-toastify';
 
 const Card = ({data, allCart, setAllCart}) => {
 
   const [selected , setSlelected] = useState(false)
 
   const handleBuyButton = ()=>{
+    const exist = allCart.some(item=>item.id === data.id)
+    if(exist){
+        toast.error('Already In Cart');
+        return;
+    }
+        toast.success(`${data.name} Is Add To Cart`)
          setSlelected(true)
          setAllCart([...allCart, data])
   }
@@ -31,7 +38,7 @@ const Card = ({data, allCart, setAllCart}) => {
                 }
             </div>
 
-            <button onClick={handleBuyButton} className='btn mt-5 w-full rounded-3xl text-white  font-semibold linear-bg'>{selected ? <Check/> : 'Buy Now'}</button>
+            <button onClick={handleBuyButton} className='btn mt-5 w-full rounded-3xl text-white  font-semibold linear-bg'>{selected ? 'Added to cart' : 'Buy Now'}</button>
         </div>
     );
 };

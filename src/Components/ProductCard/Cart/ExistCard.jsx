@@ -1,14 +1,17 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const ExistCard = ({ allCart, setAllCart }) => {
 
-    const handleDelete = (id) => {
+    const handleDelete = (id, name) => {
         const newCart = allCart.filter(cartId => cartId.id !== id)
+        toast.warning(`${name} Is Deleted`)
         setAllCart(newCart)
 
     }
     const newPrice = allCart.reduce((sum, item) => {return sum + item.price }, 0)
     const ProceedCheckout =()=>{
+        toast.success('Payment Success')
         setAllCart([])
     }
     return (
@@ -24,7 +27,7 @@ const ExistCard = ({ allCart, setAllCart }) => {
                                     <h2 className='font-bold text-xl'>${cart.price}</h2>
                                 </div>
                             </div>
-                            <button onClick={() => handleDelete(cart.id)} className='btn btn-ghost text-red-500'>Remove</button>
+                            <button onClick={() => handleDelete(cart.id, cart.name)} className='btn btn-ghost text-red-500'>Remove</button>
                         </div>
                     )
                 })

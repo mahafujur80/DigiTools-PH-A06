@@ -1,9 +1,10 @@
 import { Suspense, useState } from "react"
+
 import Hero from "./Components/HeroSection/Hero"
 import Stat from "./Components/HeroSection/Stat"
-
 import NavBar from "./Components/NavBar/NavBar"
 import ProductCard from "./Components/ProductCard/ProductCard"
+import { ToastContainer } from "react-toastify"
 
 const DataPromist = async()=>{
   const res = await fetch('/products.json')
@@ -21,6 +22,8 @@ function App() {
      <Suspense>
       <ProductCard DataPromist={DataPromist()} allCart={allCart} setAllCart={setAllCart}/>
      </Suspense>
+
+     <ToastContainer/>
     </>
   )
 }
