@@ -7,11 +7,11 @@ const Step = () => {
         <div className='w-full bg-gray-100 py-10'>
             <div className='max-w-[1100px] max-md:w-[90%] mx-auto'>
                 <div className='text-center space-y-2'>
-                    <h1 className='text-4xl font-bold'>Get Started in 3 Steps</h1>
-                    <p className=' text-zinc-500'>Start using premium digital tools in minutes, not hours.</p>
+                    <h1 className='text-4xl max-md:text-2xl font-bold'>Get Started in 3 Steps</h1>
+                    <p className=' text-zinc-500 max-md:text-sm'>Start using premium digital tools in minutes, not hours.</p>
                 </div>
 
-                <div className='grid grid-cols-3 gap-10 py-10'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 py-10'>
                     <div className=' p-10 space-y-3 bg-white rounded-xl hover:-translate-y-1.5 hover:shadow-xl transition duration-300'>
                         <div className='relative flex items-center justify-end  text-white '>
                             <div className='absolute w-7 h-7 rounded-full linear-bg text-center'>

@@ -23,8 +23,8 @@ const ExistCard = ({ allCart, setAllCart }) => {
                             <div className='flex items-center gap-5'>
                                 <div className='w-15 h-15 bg-white rounded-full flex items-center justify-center'><img className='w-10 h-10' src={cart.icon} alt={cart.name} /></div>
                                 <div>
-                                    <h1 className='text-2xl font-bold'>{cart.name}</h1>
-                                    <h2 className='font-bold text-xl'>${cart.price}</h2>
+                                    <h1 className='text-2xl max-md:text-sm font-bold'>{cart.name}</h1>
+                                    <h2 className='font-bold text-xl max-md:text-sm'>${cart.price}</h2>
                                 </div>
                             </div>
                             <button onClick={() => handleDelete(cart.id, cart.name)} className='btn btn-ghost text-red-500'>Remove</button>

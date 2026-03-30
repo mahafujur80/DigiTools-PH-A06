@@ -9,8 +9,8 @@ const ProductCard = ({DataPromist, allCart, setAllCart}) => {
     return (
         <div className='max-w-[1100px] max-sm:w-[90%] mx-auto pb-20'>
             <div className='text-center w-[60%] mx-auto space-y-2'>
-                <h2 className='font-bold text-5xl'>Premium Digital Tools</h2>
-                <p className='text-zinc-500'>Choose from our curated collection of premium digital products designed
+                <h2 className='font-bold text-5xl max-md:text-2xl'>Premium Digital Tools</h2>
+                <p className='text-zinc-500 max-md:text-xs'>Choose from our curated collection of premium digital products designed
                     to boost your productivity and creativity.</p>
             </div>
             {/* name of each tab group should be unique */}
