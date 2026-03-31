@@ -10,29 +10,33 @@ import Pricing from "./Components/Pricing/Pricing"
 import FirstFooter from "./Components/Footer/FirstFooter"
 import FooterMain from "./Components/Footer/FooterMain"
 
-const DataPromist = async()=>{
+const DataPromist = async () => {
   const res = await fetch('/products.json')
   return res.json();
 }
 
 function App() {
- const [allCart, setAllCart] = useState([])
+  const [allCart, setAllCart] = useState([])
 
   return (
     <>
-      <NavBar allCart={allCart}/>
-      <Hero/>
-     <Stat/>
-     <Suspense>
-      <ProductCard DataPromist={DataPromist()} allCart={allCart} setAllCart={setAllCart}/>
-     </Suspense>
-     <Step/>
-     <Pricing/>
-     <FirstFooter/>
-     <FooterMain/>
+      <NavBar allCart={allCart} />
+      <Hero />
+      <Stat />
+      <Suspense fallback={
+        <div className="flex justify-center items-center min-h-screen">
+          <span className="w-10 h-10 loading loading-spinner text-primary"></span>
+        </div>
+      }>
+        <ProductCard DataPromist={DataPromist()} allCart={allCart} setAllCart={setAllCart} />
+      </Suspense>
+      <Step />
+      <Pricing />
+      <FirstFooter />
+      <FooterMain />
 
-  {/* toastify ToastContainer for toast alert */}
-     <ToastContainer/>
+      {/* toastify ToastContainer for toast alert */}
+      <ToastContainer />
     </>
   )
 }

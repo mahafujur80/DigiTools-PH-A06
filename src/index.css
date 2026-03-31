@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 
 .linear-bg{
@@ -7,6 +8,6 @@
 }
 
 body{
-    
+    font-family: "Outfit", sans-serif;
     box-sizing: border-box;
 }
