@@ -15,11 +15,11 @@ const ExistCard = ({ allCart, setAllCart }) => {
         setAllCart([])
     }
     return (
-        <div className='space-y-3'>
+        <div className='space-y-3 border border-gray-300 rounded-xl p-5'>
             {
                 allCart.map(cart => {
                     return (
-                        <div key={cart.id} className='flex items-center justify-between border border-gray-200 bg-zinc-100 rounded-2xl p-5'>
+                        <div key={cart.id} className='flex items-center justify-between border border-gray-200 bg-zinc-100 rounded-2xl p-5 hover:translate-x-2 active:scale-98 transition duration-200'>
                             <div className='flex items-center gap-5'>
                                 <div className='w-15 h-15 bg-white rounded-full flex items-center justify-center'><img className='w-10 h-10' src={cart.icon} alt={cart.name} /></div>
                                 <div>
