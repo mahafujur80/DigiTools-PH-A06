@@ -4,7 +4,7 @@ import { toast} from 'react-toastify';
 
 const Card = ({data, allCart, setAllCart}) => {
 
-  const [selected , setSlelected] = useState(false)
+  const [selected , setSelected] = useState(false)
 
   const handleBuyButton = ()=>{
     const exist = allCart.some(item=>item.id === data.id)
@@ -13,7 +13,7 @@ const Card = ({data, allCart, setAllCart}) => {
         return;
     }
         toast.success(`${data.name} Is Add To Cart`)
-         setSlelected(true)
+         setSelected(true)
          setAllCart([...allCart, data])
   }
 

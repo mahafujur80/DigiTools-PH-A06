@@ -17,8 +17,8 @@ const Hero = () => {
                     </p>
                 </div>
                 <div className='max-md:flex '>
-                    <button className='btn linear-bg text-white rounded-3xl max-md:mr-1 mr-5'>Explore Products</button>
-                    <button className='btn border-[#5f2ee6]  rounded-3xl bg-linear-to-r from-[#5f2ee6] to-[#a55be6] bg-clip-text text-transparent'><Play className="w-4 h-4 text-[#5f2ee6]" /> Watch Demo</button>
+                    <button className='btn hover:-translate-y-1 transition duration-150  linear-bg text-white rounded-3xl max-md:mr-1 mr-5'>Explore Products</button>
+                    <button className='btn hover:-translate-y-1 transition duration-150 border-[#5f2ee6]  rounded-3xl bg-linear-to-r from-[#5f2ee6] to-[#a55be6] bg-clip-text text-transparent'><Play className="w-4 h-4 text-[#5f2ee6]" /> Watch Demo</button>
                 </div>
             </div>
 

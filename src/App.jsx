@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify"
 import Step from "./Components/Steps/Step"
 import Pricing from "./Components/Pricing/Pricing"
 import FirstFooter from "./Components/Footer/FirstFooter"
+import FooterMain from "./Components/Footer/FooterMain"
 
 const DataPromist = async()=>{
   const res = await fetch('/products.json')
@@ -28,6 +29,7 @@ function App() {
      <Step/>
      <Pricing/>
      <FirstFooter/>
+     <FooterMain/>
 
      <ToastContainer/>
     </>

@@ -10,8 +10,8 @@ const FirstFooter = () => {
                         Start your free trial today.</p>
                 </div>
                 <div className='flex justify-center gap-2'>
-                    <button className='btn rounded-3xl text-[#5f2ee6] bg-white'>Explore Products</button>
-                    <button className='btn rounded-3xl text-white bg-[#5f2ee6]'>View Pricing</button>
+                    <button className='btn rounded-3xl text-[#5f2ee6] bg-white hover:-translate-y-1 transition duration-150'>Explore Products</button>
+                    <button className='btn rounded-3xl text-white bg-[#5f2ee6] hover:-translate-y-1 transition duration-150'>View Pricing</button>
                 </div>
                 <p className='text-zinc-300 text-sm'>14-day free trial • No credit card required • Cancel anytime</p>
             </div>
