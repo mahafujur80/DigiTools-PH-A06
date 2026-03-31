@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
-import { toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 
-const Card = ({data, allCart, setAllCart}) => {
+const Card = ({ data, allCart, setAllCart }) => {
 
-  const [selected , setSelected] = useState(false)
+    const [selected, setSelected] = useState(false)
 
-  const handleBuyButton = ()=>{
-    const exist = allCart.some(item=>item.id === data.id)
-    if(exist){
-        toast.error('Already In Cart');
-        return;
-    }
+    const handleBuyButton = () => {
+        const exist = allCart.some(item => item.id === data.id)
+        if (exist) {
+            toast.error('Already In Cart');
+            return;
+        }
         toast.success(`${data.name} Is Add To Cart`)
-         setSelected(true)
-         setAllCart([...allCart, data])
-  }
+        setSelected(true)
+        setAllCart([...allCart, data])
+    }
 
     return (
         <div className=' shadow-sm hover:shadow-xl border border-gray-300 p-4 space-y-2 rounded-xl  hover:-translate-y-2 active:scale-95 transition duration-300'>

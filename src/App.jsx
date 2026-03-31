@@ -31,6 +31,7 @@ function App() {
      <FirstFooter/>
      <FooterMain/>
 
+  {/* toastify ToastContainer for toast alert */}
      <ToastContainer/>
     </>
   )

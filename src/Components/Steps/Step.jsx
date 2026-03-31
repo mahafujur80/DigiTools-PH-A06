@@ -48,8 +48,8 @@ const Step = () => {
                         <div className='flex items-center justify-center flex-col text-center space-y-3'>
                             <div className='w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center'> <img src={rocket} alt="cart-picture" /></div>
                             <h1 className='font-bold text-2xl'></h1>
-                            <p className='text-sm text-zinc-500'>Download and start using your premium 
-tools immediately.</p>
+                            <p className='text-sm text-zinc-500'>Download and start using your premium
+                                tools immediately.</p>
                         </div>
                     </div>
                 </div>

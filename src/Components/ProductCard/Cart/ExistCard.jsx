@@ -9,8 +9,8 @@ const ExistCard = ({ allCart, setAllCart }) => {
         setAllCart(newCart)
 
     }
-    const newPrice = allCart.reduce((sum, item) => {return sum + item.price }, 0)
-    const ProceedCheckout =()=>{
+    const newPrice = allCart.reduce((sum, item) => { return sum + item.price }, 0)
+    const ProceedCheckout = () => {
         toast.success('Payment Success')
         setAllCart([])
     }

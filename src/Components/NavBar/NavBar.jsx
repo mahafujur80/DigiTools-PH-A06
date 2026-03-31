@@ -1,9 +1,9 @@
 import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 
-const NavBar = ({allCart}) => {
+const NavBar = ({ allCart }) => {
     return (
-        <div className="navbar max-w-[1100px] h-auto  mx-auto bg-base-100 ">
+        <div className="navbar max-w-[1100px]  mx-auto bg-base-100 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="mr-1 lg:hidden">
@@ -35,7 +35,7 @@ const NavBar = ({allCart}) => {
                 <div className="relative inline-block mr-2">
                     <ShoppingCart />
                     <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1.5 rounded-full">
-                        {allCart.length === 0? "": allCart.length}
+                        {allCart.length === 0 ? "" : allCart.length}
                     </span>
                 </div>
 

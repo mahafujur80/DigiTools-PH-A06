@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
 
             <div className='max-md:'>
-                <img  src={banner} alt="banner-image" />
+                <img src={banner} alt="banner-image" />
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import Products from './Products/Products';
 import Cart from './Cart/Cart';
 
-const ProductCard = ({DataPromist, allCart, setAllCart}) => {
+const ProductCard = ({ DataPromist, allCart, setAllCart }) => {
     const productData = use(DataPromist)
 
     const [activeSection, setActiveSection] = useState('products')
@@ -15,12 +15,12 @@ const ProductCard = ({DataPromist, allCart, setAllCart}) => {
             </div>
             {/* name of each tab group should be unique */}
             <div className="tabs flex justify-center gap-1 mx-auto my-10">
-                <button onClick={()=>setActiveSection('products')} className={`btn rounded-3xl ${activeSection === 'products'? 'linear-bg text-white':''}`}>Products</button>
-                <button onClick={()=>setActiveSection('cart')}  className={`btn rounded-3xl ${activeSection === 'cart'? 'linear-bg text-white':''}`}>Cart ({allCart.length}) </button>
+                <button onClick={() => setActiveSection('products')} className={`btn rounded-3xl ${activeSection === 'products' ? 'linear-bg text-white' : ''}`} >Products</button>
+                <button onClick={() => setActiveSection('cart')} className={`btn rounded-3xl ${activeSection === 'cart' ? 'linear-bg text-white' : ''}`}>Cart ({allCart.length}) </button>
             </div>
 
             {
-            activeSection === 'products'? <Products productData={productData} allCart={allCart} setAllCart={setAllCart}/> : <Cart allCart={allCart} setAllCart={setAllCart}/>
+                activeSection === 'products' ? <Products productData={productData} allCart={allCart} setAllCart={setAllCart} /> : <Cart allCart={allCart} setAllCart={setAllCart} />
             }
 
         </div>
