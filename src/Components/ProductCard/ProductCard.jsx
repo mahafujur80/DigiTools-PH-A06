@@ -2,8 +2,8 @@ import React, { use, useState } from 'react';
 import Products from './Products/Products';
 import Cart from './Cart/Cart';
 
-const ProductCard = ({ DataPromist, allCart, setAllCart }) => {
-    const productData = use(DataPromist)
+const ProductCard = ({ DataPromises, allCart, setAllCart }) => {
+    const productData = use(DataPromises)
 
     const [activeSection, setActiveSection] = useState('products')
     return (

@@ -1,8 +1,8 @@
-# 🛒 Product Cart Web Application
+# 🛒 DigiTools Web Application
 
 ## 📌 Project Name
 
-Product Cart Web Application
+DigtTools Web Application
 
 ---
 
