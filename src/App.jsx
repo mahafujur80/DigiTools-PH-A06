@@ -24,7 +24,13 @@ function App() {
       <NavBar allCart={allCart} />
       <Hero />
       <Stat />
-      <ProductCard DataPromises={DataPromises} allCart={allCart} setAllCart={setAllCart} />
+      <Suspense fallback={
+        <div className="flex justify-center items-center min-h-screen">
+          <span className="w-10 h-10 loading loading-spinner text-primary"></span>
+        </div>
+      }>
+        <ProductCard DataPromises={DataPromises} allCart={allCart} setAllCart={setAllCart} />
+      </Suspense>
       <Step />
       <Pricing />
       <FirstFooter />
