@@ -51,6 +51,13 @@ const FooterMain = () => {
                     </div>
                 </div>
             </div>
+            <div className='max-w-[1100px] max-md:w-[90%] mx-auto'>
+                <div className='bg-zinc-400 h-px w-full'></div>
+                <div className='flex items-center justify-between py-5 max-md:flex-col'>
+                    <p className='text-zinc-300 text-xs'>&copy; {new Date().getFullYear()} DigiTools All Rights Reserved</p>
+                    <p className='text-zinc-300 text-xs'>Privacy Policy           Terms of Service           Cookies</p>
+                </div>
+            </div>
 
         </div>
     );

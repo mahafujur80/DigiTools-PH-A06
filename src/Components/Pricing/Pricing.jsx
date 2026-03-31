@@ -24,7 +24,7 @@ const Pricing = () => {
                         <p className='flex gap-2 text-zinc-600'><Check className='text-green-500' />Community support</p>
                         <p className='flex gap-2 text-zinc-600'><Check className='text-green-500' />1 project per month</p>
                     </div>
-                    <button className='btn w-full text-xl font-bold rounded-3xl linear-bg text-white'>Get Started Free</button>
+                    <button className='btn w-full text-md font-bold rounded-3xl linear-bg text-white'>Get Started Free</button>
                 </div>
 
                 <div className='relative hover:-translate-y-2 transition duration-200 linear-bg shadow-xl rounded-xl space-y-2 p-7 flex flex-col justify-between scale-105'>
@@ -44,7 +44,7 @@ const Pricing = () => {
                         <p className='flex gap-2 text-zinc-200'><Check className='text-green-500' />Priority support</p>
                         <p className='flex gap-2 text-zinc-200'><Check className='text-green-500' />Advanced analytics</p>
                     </div>
-                    <button className='btn w-full text-xl font-bold rounded-3xl bg-white'><p className=' bg-linear-to-r from-[#5f2ee6] to-[#a55be6] bg-clip-text text-transparent'>Start Pro Trial</p></button>
+                    <button className='btn w-full text-md font-bold rounded-3xl bg-white'><p className=' bg-linear-to-r from-[#5f2ee6] to-[#a55be6] bg-clip-text text-transparent'>Start Pro Trial</p></button>
                 </div>
 
                 <div className='bg-gray-100 hover:shadow-xl  hover:translate-x-2 transition duration-200 rounded-xl space-y-2 p-7 flex flex-col justify-between'>
@@ -63,7 +63,7 @@ const Pricing = () => {
                         <p className='flex gap-2 text-zinc-500'><Check className='text-green-500' />Dedicated support</p>
                         <p className='flex gap-2 text-zinc-500'><Check className='text-green-500' />Custom branding</p>
                     </div>
-                    <button className='btn w-full text-xl font-bold rounded-3xl linear-bg text-white'>Contact Sales</button>
+                    <button className='btn w-full text-md font-bold rounded-3xl linear-bg text-white'>Contact Sales</button>
                 </div>
             </div>
         </div>
